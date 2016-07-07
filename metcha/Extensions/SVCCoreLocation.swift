@@ -16,6 +16,7 @@ extension SecondViewController: CLLocationManagerDelegate{
 		{
 			let locValue:CLLocationCoordinate2D = location.coordinate
 			print("My Location = \(locValue.latitude ?? 0) \(locValue.longitude ?? 0)")
+			self.userLocation = CLLocation(latitude: locValue.latitude, longitude: locValue.longitude)
 		}
 		else {
 			print("fail")
