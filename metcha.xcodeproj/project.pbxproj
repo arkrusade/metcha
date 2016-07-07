@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AD70EE2C1D2EC043003FE486 /* yeas.png in Resources */ = {isa = PBXBuildFile; fileRef = AD70EE2B1D2EC043003FE486 /* yeas.png */; };
+		AD70EE2E1D2ECB80003FE486 /* SVCCoreLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD70EE2D1D2ECB80003FE486 /* SVCCoreLocation.swift */; };
 		AD8684E81D2D85A8004D88F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8684E71D2D85A8004D88F3 /* AppDelegate.swift */; };
 		AD8684EA1D2D85A8004D88F3 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8684E91D2D85A8004D88F3 /* FirstViewController.swift */; };
 		AD8684EC1D2D85A8004D88F3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8684EB1D2D85A8004D88F3 /* SecondViewController.swift */; };
 		AD8684EF1D2D85A8004D88F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD8684ED1D2D85A8004D88F3 /* Main.storyboard */; };
 		AD8684F11D2D85A8004D88F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD8684F01D2D85A8004D88F3 /* Assets.xcassets */; };
 		AD8684F41D2D85A8004D88F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD8684F21D2D85A8004D88F3 /* LaunchScreen.storyboard */; };
+		AD8684FE1D2D9FDD004D88F3 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8684FC1D2D9FDD004D88F3 /* JSON.swift */; };
+		AD8684FF1D2D9FDD004D88F3 /* PublicArt.json in Resources */ = {isa = PBXBuildFile; fileRef = AD8684FD1D2D9FDD004D88F3 /* PublicArt.json */; };
+		AD8685021D2DA0C4004D88F3 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8685011D2DA0C4004D88F3 /* Artwork.swift */; };
+		AD8685051D2DA293004D88F3 /* VCMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8685041D2DA293004D88F3 /* VCMapView.swift */; };
+		AD8685071D2DCD9C004D88F3 /* PinLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8685061D2DCD9C004D88F3 /* PinLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AD70EE2B1D2EC043003FE486 /* yeas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yeas.png; sourceTree = "<group>"; };
+		AD70EE2D1D2ECB80003FE486 /* SVCCoreLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVCCoreLocation.swift; sourceTree = "<group>"; };
 		AD8684E41D2D85A8004D88F3 /* metcha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = metcha.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD8684E71D2D85A8004D88F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD8684E91D2D85A8004D88F3 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +33,11 @@
 		AD8684F01D2D85A8004D88F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD8684F31D2D85A8004D88F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD8684F51D2D85A8004D88F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD8684FC1D2D9FDD004D88F3 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
+		AD8684FD1D2D9FDD004D88F3 /* PublicArt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PublicArt.json; sourceTree = "<group>"; };
+		AD8685011D2DA0C4004D88F3 /* Artwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
+		AD8685041D2DA293004D88F3 /* VCMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VCMapView.swift; sourceTree = "<group>"; };
+		AD8685061D2DCD9C004D88F3 /* PinLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PinLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,46 @@
 		AD8684E61D2D85A8004D88F3 /* metcha */ = {
 			isa = PBXGroup;
 			children = (
+				AD8685031D2DA286004D88F3 /* Extensions */,
+				AD8685001D2DA0AD004D88F3 /* Classes */,
+				AD8684FB1D2D9FDD004D88F3 /* HonoluluArtResources */,
 				AD8684E71D2D85A8004D88F3 /* AppDelegate.swift */,
 				AD8684E91D2D85A8004D88F3 /* FirstViewController.swift */,
 				AD8684EB1D2D85A8004D88F3 /* SecondViewController.swift */,
 				AD8684ED1D2D85A8004D88F3 /* Main.storyboard */,
 				AD8684F01D2D85A8004D88F3 /* Assets.xcassets */,
+				AD70EE2B1D2EC043003FE486 /* yeas.png */,
 				AD8684F21D2D85A8004D88F3 /* LaunchScreen.storyboard */,
 				AD8684F51D2D85A8004D88F3 /* Info.plist */,
 			);
 			path = metcha;
+			sourceTree = "<group>";
+		};
+		AD8684FB1D2D9FDD004D88F3 /* HonoluluArtResources */ = {
+			isa = PBXGroup;
+			children = (
+				AD8684FC1D2D9FDD004D88F3 /* JSON.swift */,
+				AD8684FD1D2D9FDD004D88F3 /* PublicArt.json */,
+			);
+			path = HonoluluArtResources;
+			sourceTree = "<group>";
+		};
+		AD8685001D2DA0AD004D88F3 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				AD8685011D2DA0C4004D88F3 /* Artwork.swift */,
+				AD8685061D2DCD9C004D88F3 /* PinLocation.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		AD8685031D2DA286004D88F3 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AD8685041D2DA293004D88F3 /* VCMapView.swift */,
+				AD70EE2D1D2ECB80003FE486 /* SVCCoreLocation.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +144,7 @@
 				TargetAttributes = {
 					AD8684E31D2D85A8004D88F3 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = SCKJJS495B;
 					};
 				};
 			};
@@ -125,6 +171,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD8684FF1D2D9FDD004D88F3 /* PublicArt.json in Resources */,
+				AD70EE2C1D2EC043003FE486 /* yeas.png in Resources */,
 				AD8684F41D2D85A8004D88F3 /* LaunchScreen.storyboard in Resources */,
 				AD8684F11D2D85A8004D88F3 /* Assets.xcassets in Resources */,
 				AD8684EF1D2D85A8004D88F3 /* Main.storyboard in Resources */,
@@ -138,9 +186,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD8685051D2DA293004D88F3 /* VCMapView.swift in Sources */,
+				AD8685021D2DA0C4004D88F3 /* Artwork.swift in Sources */,
 				AD8684EC1D2D85A8004D88F3 /* SecondViewController.swift in Sources */,
+				AD8685071D2DCD9C004D88F3 /* PinLocation.swift in Sources */,
 				AD8684E81D2D85A8004D88F3 /* AppDelegate.swift in Sources */,
 				AD8684EA1D2D85A8004D88F3 /* FirstViewController.swift in Sources */,
+				AD70EE2E1D2ECB80003FE486 /* SVCCoreLocation.swift in Sources */,
+				AD8684FE1D2D9FDD004D88F3 /* JSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,10 +308,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = metcha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.orctech.metcha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -266,10 +322,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = metcha/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.orctech.metcha;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -292,6 +351,7 @@
 				AD8684FA1D2D85A8004D88F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
