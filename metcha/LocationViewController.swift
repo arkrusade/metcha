@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class LocationViewController: UIViewController, UITableViewDelegate {
 	var locations: [String] = []
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -26,25 +26,16 @@ class FirstViewController: UIViewController {
 
 // MARK: TableView Data Source
 
-extension FirstViewController: UITableViewDataSource {
+extension LocationViewController: UITableViewDataSource {
 	
 	func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
 		return self.locations.count
 	}
 	
 	func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-		let cell = tableView.dequeueReusableCellWithIdentifier("UserCell") as! FriendSearchTableViewCell
-		
-		
-		
-		if let followingUsers = followingUsers {
-			// check if current user is already following displayed user
-			// change button appereance based on result
-			cell.canFollow = !followingUsers.contains(user)
-		}
-		
-		cell.delegate = self
-		
+		let cell = tableView.dequeueReusableCellWithIdentifier("locationCell") as! LocationCell
+		cell.titleLabel.text = "Hello"
 		return cell
 	}
 }
+

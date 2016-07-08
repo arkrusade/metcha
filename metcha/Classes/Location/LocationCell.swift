@@ -6,8 +6,10 @@
 //  Copyright © 2016 orctech. All rights reserved.
 //
 
-import Cocoa
+import UIKit
 
 class LocationCell: UITableViewCell {
-
+	@IBOutlet weak var titleLabel: UILabel!
+	@IBOutlet weak var friendsLabel: UILabel!
+	
 }

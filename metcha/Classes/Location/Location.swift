@@ -6,4 +6,13 @@
 //  Copyright © 2016 orctech. All rights reserved.
 //
 
-import Foundation
+import UIKit
+class Location {
+	var friendsAtLocation: [String]
+	
+	init(friendsAtLocation friends: [String])
+	{
+		self.friendsAtLocation = friends
+	}
+	
+}
